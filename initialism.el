@@ -61,7 +61,7 @@
   (interactive)
   (cl-block here
     (let ((letter (char-to-string (char-after)))
-          (foward-type 'undefined))
+          (forward-type 'undefined))
       (cond ((looking-at "[[:alnum:]]") (setq forward-type 'word))
             ((looking-at "[[:punct:]]") (setq forward-type 'char))
             ((looking-at "[[:blank:]]") (progn (forward-char) (cl-return-from here)))
