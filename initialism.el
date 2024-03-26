@@ -60,8 +60,8 @@
             ((error
               "(initialism) Sorry, I don't know how to handle LETTER: '%s'." letter)))
       (let* ((uc-letter (capitalize letter))
-             (new-string (concat initialism--model uc-letter)))
-        (setq initialism--model new-string)
+             (new-model (concat initialism--model uc-letter)))
+        (setq initialism--model new-model)
         (initialism--view))
       (cond ((equal forward-type 'word) (forward-word))
             ((equal forward-type 'char) (forward-char))
