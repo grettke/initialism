@@ -29,6 +29,10 @@
 (defvar initialism--model nil
   "The internal representations of information.")
 
+(defun initialism--view ()
+  "Presents information to the user."
+  (message "(%s)" initialism--model))
+
 (cl-defun initialism-do ()
   "Incrementally builds initialism using content under cursor."
   (interactive)
@@ -43,7 +47,7 @@
       (let* ((uc-letter (capitalize letter))
              (new-string (concat initialism--model uc-letter)))
         (setq initialism--model new-string)
-        (message "(%s)" initialism--model))
+        (initialism--view))
       (cond ((equal forward-type 'word) (forward-word))
             ((equal forward-type 'char) (forward-char))
             ((error
