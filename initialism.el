@@ -36,7 +36,8 @@
 
 (defcustom initialism-format-string "(%s)"
   "Configuration string passed to `format' for the view."
-  :type 'string)
+  :type 'string
+  :group 'initialism)
 
 (defun initialism-view ()
   "Presents information to the user."
