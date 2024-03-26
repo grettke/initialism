@@ -29,9 +29,13 @@
 (defvar initialism--model nil
   "The internal representations of information.")
 
+(defcustom initialism-format-string "(%s)"
+  "Configuration string passed to `format' for the view."
+  :type 'string)
+
 (defun initialism--view ()
   "Presents information to the user."
-  (message "(%s)" initialism--model))
+  (message initialism-format-string initialism--model))
 
 (cl-defun initialism-do ()
   "Incrementally builds initialism using content under cursor."
