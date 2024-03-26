@@ -33,7 +33,7 @@
   "Configuration string passed to `format' for the view."
   :type 'string)
 
-(defun initialism--view ()
+(defun initialism-view ()
   "Presents information to the user."
   (message initialism-format-string initialism--model))
 
