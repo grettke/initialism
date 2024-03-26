@@ -26,6 +26,11 @@
 
 (require 'cl-lib)
 
+(defgroup initialism
+  '((initialism-format-string custom-variable))
+  "Create an abbreviation formed from initial letters."
+  :group 'abbrev)
+
 (defvar initialism--model nil
   "The internal representations of information.")
 
