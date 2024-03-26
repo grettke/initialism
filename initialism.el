@@ -35,7 +35,9 @@
 
 (defun initialism-view ()
   "Presents information to the user."
-  (message initialism-format-string initialism--model))
+  (interactive)
+  (if initialism--model (message initialism-format-string initialism--model)
+    (error "(initialism) Sorry, I don't have a value to display.")))
 
 (defun initialism-delete ()
   "Deletes view."
