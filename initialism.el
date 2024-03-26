@@ -37,6 +37,10 @@
   "Presents information to the user."
   (message initialism-format-string initialism--model))
 
+(defun initialism-delete ()
+  "Deletes view."
+  (interactive)
+  (setq initialism--model nil))
 (cl-defun initialism-do ()
   "Incrementally builds initialism using content under cursor."
   (interactive)
