@@ -41,6 +41,13 @@
   "Deletes view."
   (interactive)
   (setq initialism--model nil))
+
+(defun initialism-done ()
+  "Inserts then deletes view."
+  (interactive)
+  (insert (initialism-view))
+  (initialism-delete))
+
 (cl-defun initialism-do ()
   "Incrementally builds initialism using content under cursor."
   (interactive)
