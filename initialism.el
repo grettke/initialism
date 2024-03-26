@@ -1,6 +1,6 @@
 ;;; initialism.el --- Create an abbreviation formed from initial letters.  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024  Wisdom and Wonder
+;; Copyright (C) 2024 Grant Rettke
 
 ;; Author: Grant Rettke <grant@wisdomandwonder.com>
 ;; Keywords: abbrev
