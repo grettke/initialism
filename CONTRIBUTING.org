@@ -1,1 +1,16 @@
+* Contributing
 
+Any and all contributions are welcome.
+
+- Coding
+  - Follow [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html][Emacs Lisp conventions]]
+  - Follow [[https://github.com/bbatsov/emacs-lisp-style-guide][Emacs Lisp Style Guide]]
+  - Set ~fill-column~ to =80=
+  - Agrees to the [[https://www.gnu.org/licenses/gpl-3.0.en.html][GPLv3]] license
+  - When you make package changes run the [[https://github.com/purcell/package-lint][package-lint]] linter
+- Writing
+  - [[https://www.merriam-webster.com/dictionary/spellcheck][Spell-check]] your documentation and strings
+  - Follow the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Documentation.html][GNU Documentation Standards]]
+- Community
+  - Add to [[https://github.com/grettke/initialism/issues][The issue tracker]]
+  
