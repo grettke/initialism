@@ -43,7 +43,7 @@
   "Presents information to the user."
   (interactive)
   (if initialism--model (message initialism-format-string initialism--model)
-    (error "(initialism) Sorry, I don't have a value to display.")))
+    (error "(initialism) Sorry, I don't have a value to display")))
 
 (defun initialism-delete ()
   "Deletes view."
@@ -51,7 +51,7 @@
   (setq initialism--model nil))
 
 (defun initialism-done ()
-  "Inserts then deletes view."
+  "Insert then deletes view."
   (interactive)
   (insert (initialism-view))
   (initialism-delete))
@@ -66,7 +66,7 @@
             ((looking-at "[[:punct:]]") (setq forward-type 'char))
             ((looking-at "[[:blank:]]") (progn (forward-char) (cl-return-from here)))
             ((error
-              "(initialism) Sorry, I don't know how to handle LETTER: '%s'." letter)))
+              "(initialism) Sorry, I don't know how to handle LETTER: '%s'" letter)))
       (let* ((uc-letter (capitalize letter))
              (new-model (concat initialism--model uc-letter)))
         (setq initialism--model new-model)
@@ -74,7 +74,7 @@
       (cond ((equal forward-type 'word) (forward-word))
             ((equal forward-type 'char) (forward-char))
             ((error
-              "(initialism) Sorry, I don't know how to handle TYPE: '%s'." forward-type))))))
+              "(initialism) Sorry, I don't know how to handle TYPE: '%s'" forward-type))))))
 
 (provide 'initialism)
 ;;; initialism.el ends here
