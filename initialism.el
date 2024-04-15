@@ -91,8 +91,11 @@
 (defun initialism-delete ()
   "Deletes view."
   (interactive)
-  (setq initialism--model nil)
-  (message "(initialism) View deleted."))
+  (cond (initialism--model
+         (setq initialism--model nil)
+         (message "(initialism) View deleted."))
+        (t
+         (message "(initialism) Sorry, I don't have a value to delete."))))
 
 (defun initialism-dispatch ()
   "Use `C-u' prefix arguments to use the library.
