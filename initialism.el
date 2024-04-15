@@ -39,24 +39,6 @@
   :type 'string
   :group 'initialism)
 
-(defun initialism-view ()
-  "Presents information to the user."
-  (interactive)
-  (if initialism--model (message initialism-format-string initialism--model)
-    (error "(initialism) Sorry, I don't have a value to display")))
-
-(defun initialism-delete ()
-  "Deletes view."
-  (interactive)
-  (setq initialism--model nil)
-  (message "(initialism) View deleted."))
-
-(defun initialism-insert ()
-  "Insert then deletes the view."
-  (interactive)
-  (insert (initialism-view))
-  (message "(initialism) View inserted."))
-
 (cl-defun initialism-build ()
   "Incrementally builds initialism using character under cursor.
 
@@ -84,6 +66,24 @@
               "(initialism) Sorry, I don't know how to handle TYPE: '%s'"
               forward-type))))))
 
+(defun initialism-view ()
+  "Presents information to the user."
+  (interactive)
+  (if initialism--model (message initialism-format-string initialism--model)
+    (error "(initialism) Sorry, I don't have a value to display")))
+
+(defun initialism-insert ()
+  "Insert then deletes the view."
+  (interactive)
+  (insert (initialism-view))
+  (message "(initialism) View inserted."))
+
+(defun initialism-delete ()
+  "Deletes view."
+  (interactive)
+  (setq initialism--model nil)
+  (message "(initialism) View deleted."))
+
 (defun initialism-dispatch ()
   "Use `C-u' prefix arguments to use the library.
 
@@ -109,7 +109,7 @@ Usage:
           ((= value 16) (call-interactively 'initialism-insert))
           ((= value 64) (call-interactively 'initialism-delete))
           (t
-           (error "(initialism) Sorry, I can't handle the argument '%s'." value)))))
+           (error "(initialism) Sorry, I can't handle the argument '%s'" value)))))
 
 (provide 'initialism)
 ;;; initialism.el ends here
