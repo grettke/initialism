@@ -59,7 +59,7 @@
   (initialism-delete))
 
 (cl-defun initialism-build ()
-  "Incrementally builds initialism using content under cursor."
+  "Incrementally builds initialism using character under cursor."
   (interactive)
   (cl-block here
     (let ((letter (char-to-string (char-after)))
