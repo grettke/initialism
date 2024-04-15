@@ -48,7 +48,8 @@
 (defun initialism-delete ()
   "Deletes view."
   (interactive)
-  (setq initialism--model nil))
+  (setq initialism--model nil)
+  (message "(initialism) View deleted."))
 
 (defun initialism-insert ()
   "Insert then deletes the view."
