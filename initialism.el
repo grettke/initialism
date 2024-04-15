@@ -59,7 +59,13 @@
   (initialism-delete))
 
 (cl-defun initialism-build ()
-  "Incrementally builds initialism using character under cursor."
+  "Incrementally builds initialism using character under cursor.
+
+- Q. Initialisms are created using the first letter of a word.
+     However, this function includes both letters and non-letters
+     (characters). Why?
+- A. It creates initialisms from entire sentences. Punctuation is
+     essential for understanding a sentence-based initialism."
   (interactive)
   (cl-block here
     (let ((letter (char-to-string (char-after)))
