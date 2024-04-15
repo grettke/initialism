@@ -58,7 +58,7 @@
   (message "(initialism) View inserted.")
   (initialism-delete))
 
-(cl-defun initialism-do ()
+(cl-defun initialism-build ()
   "Incrementally builds initialism using content under cursor."
   (interactive)
   (cl-block here
