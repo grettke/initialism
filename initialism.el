@@ -101,19 +101,18 @@
   "Use `C-u' prefix arguments to use the library.
 
 Use this as a shortcut for the most frequently used
-functions in order of the typical workflow:
-
-- Building it
-- Reviewing it
-- Inserting it
-- Deleting it
+functions in order of the typical workflow.
 
 Usage:
 
-- `initialism-dispatch': Calls `initialism-build')
-- `C-u' `initialism-dispatch': Calls `initialism-view')
-- `C-u' `C-u' `initialism-dispatch': Calls `initialism-insert')
-- `C-u' `C-u' `C-u' `initialism-dispatch': Calls `initialism-delete'"
+- Building it
+  - `initialism-dispatch': Calls `initialism-build')
+- Reviewing it
+  - `C-u' `initialism-dispatch': Calls `initialism-view')
+- Inserting it
+  - `C-u' `C-u' `initialism-dispatch': Calls `initialism-insert')
+- Deleting it
+  - `C-u' `C-u' `C-u' `initialism-dispatch': Calls `initialism-delete'"
   (interactive)
   (let* ((arg current-prefix-arg)
          (value (if (null arg) nil (first arg))))
