@@ -55,6 +55,7 @@
   "Insert then deletes the view."
   (interactive)
   (insert (initialism-view))
+  (message "(initialism) View inserted.")
   (initialism-delete))
 
 (cl-defun initialism-do ()
