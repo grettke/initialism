@@ -39,6 +39,14 @@
   :type 'string
   :group 'initialism)
 
+(defun initialism--format ()
+  "Create a formatted model for use."
+  (cond (initialism--model
+         (format initialism-format-string initialism--model))
+        (t
+         (message "(initialism) Sorry, I don't have a value to format.")
+         nil)))
+
 (cl-defun initialism-build ()
   "Incrementally builds initialism using character under cursor.
 
@@ -73,10 +81,12 @@
     (error "(initialism) Sorry, I don't have a value to display")))
 
 (defun initialism-insert ()
-  "Insert then deletes the view."
+  "Insert the view."
   (interactive)
-  (insert (initialism-view))
-  (message "(initialism) View inserted."))
+  (cond (initialism--model
+         (insert (initialism-view))
+         (message "(initialism) View inserted."))
+        (t (error "(initialism) Sorry, I don't have a value to insert"))))
 
 (defun initialism-delete ()
   "Deletes view."
