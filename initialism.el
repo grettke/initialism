@@ -50,8 +50,8 @@
   (interactive)
   (setq initialism--model nil))
 
-(defun initialism-done ()
-  "Insert then deletes view."
+(defun initialism-insert ()
+  "Insert then deletes the view."
   (interactive)
   (insert (initialism-view))
   (initialism-delete))
