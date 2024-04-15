@@ -57,14 +57,14 @@
      essential for understanding a sentence-based initialism."
   (interactive)
   (cl-block here
-    (let ((letter (char-to-string (char-after)))
+    (let ((character (char-to-string (char-after)))
           (forward-type 'undefined))
       (cond ((looking-at "[[:alnum:]]") (setq forward-type 'word))
             ((looking-at "[[:punct:]]") (setq forward-type 'char))
             ((looking-at "[[:blank:]]") (progn (forward-char) (cl-return-from here)))
             ((error
-              "(initialism) Sorry, I don't know how to handle character: '%s'" letter)))
-      (let* ((uc-letter (capitalize letter))
+              "(initialism) Sorry, I don't know how to handle character: '%s'" character)))
+      (let* ((uc-letter (capitalize character))
              (new-model (concat initialism--model uc-letter)))
         (setq initialism--model new-model)
         (initialism-view))
