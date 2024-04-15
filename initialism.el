@@ -63,7 +63,7 @@
             ((looking-at "[[:punct:]]") (setq forward-type 'char))
             ((looking-at "[[:blank:]]") (progn (forward-char) (cl-return-from here)))
             ((error
-              "(initialism) Sorry, I don't know how to handle LETTER: '%s'" letter)))
+              "(initialism) Sorry, I don't know how to handle character: '%s'" letter)))
       (let* ((uc-letter (capitalize letter))
              (new-model (concat initialism--model uc-letter)))
         (setq initialism--model new-model)
