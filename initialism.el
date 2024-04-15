@@ -78,7 +78,7 @@
   "Presents information to the user."
   (interactive)
   (if (initialism--format) (message (initialism--format))
-    (error "(initialism) Sorry, I don't have a value to display")))
+    (message "(initialism) Sorry, I don't have a value to display")))
 
 (defun initialism-insert ()
   "Insert the view."
@@ -86,7 +86,7 @@
   (cond ((initialism--format)
          (insert (initialism--format))
          (message "(initialism) View inserted."))
-        (t (error "(initialism) Sorry, I don't have a value to insert"))))
+        (t (message "(initialism) Sorry, I don't have a value to insert"))))
 
 (defun initialism-delete ()
   "Deletes view."
