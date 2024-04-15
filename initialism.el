@@ -77,14 +77,14 @@
 (defun initialism-view ()
   "Presents information to the user."
   (interactive)
-  (if initialism--model (message initialism-format-string initialism--model)
+  (if (initialism--format) (message (initialism--format))
     (error "(initialism) Sorry, I don't have a value to display")))
 
 (defun initialism-insert ()
   "Insert the view."
   (interactive)
-  (cond (initialism--model
-         (insert (initialism-view))
+  (cond ((initialism--format)
+         (insert (initialism--format))
          (message "(initialism) View inserted."))
         (t (error "(initialism) Sorry, I don't have a value to insert"))))
 
