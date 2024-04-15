@@ -82,7 +82,35 @@
       (cond ((equal forward-type 'word) (forward-word))
             ((equal forward-type 'char) (forward-char))
             ((error
-              "(initialism) Sorry, I don't know how to handle TYPE: '%s'" forward-type))))))
+              "(initialism) Sorry, I don't know how to handle TYPE: '%s'"
+              forward-type))))))
+
+(defun initialism-dispatch ()
+  "Use `C-u' prefix arguments to use the library.
+
+Use this as a shortcut for the most frequently used
+functions in order of the typical workflow:
+
+- Building it
+- Reviewing it
+- Inserting it
+- Deleting it
+
+Usage:
+
+- `initialism-dispatch': Calls `initialism-build')
+- `C-u' `initialism-dispatch': Calls `initialism-view')
+- `C-u' `C-u' `initialism-dispatch': Calls `initialism-insert')
+- `C-u' `C-u' `C-u' `initialism-dispatch': Calls `initialism-delete'"
+  (interactive)
+  (let* ((arg current-prefix-arg)
+         (value (if (null arg) nil (first arg))))
+    (cond ((null value) (call-interactively 'initialism-build))
+          ((= value 4) (call-interactively 'initialism-view))
+          ((= value 16) (call-interactively 'initialism-insert))
+          ((= value 64) (call-interactively 'initialism-delete))
+          (t
+           (error "(initialism) Sorry, I can't handle the argument '%s'." value)))))
 
 (provide 'initialism)
 ;;; initialism.el ends here
