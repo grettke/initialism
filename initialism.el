@@ -123,6 +123,11 @@ Usage:
           (t
            (error "(initialism) Sorry, I can't handle the argument '%s'" value)))))
 
+(defun initialism-help ()
+  "Display documentation for `initialism-dispatch'."
+  (interactive)
+  (describe-symbol 'initialism-dispatch))
+
 (provide 'initialism)
 ;;; initialism.el ends here
 
