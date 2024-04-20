@@ -1,9 +1,13 @@
-;;; initialism.el --- Create an abbreviation formed from initial letters.  -*- lexical-binding: t; -*-
+;;; initialism.el --- Create an abbreviation formed from initial letters  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2024 Grant Rettke
 
 ;; Author: Grant Rettke <grant@wisdomandwonder.com>
+;; Maintainer: Grant Rettke <grant@wisdomandwonder.com>
+;; Version: 1.0.0
+;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: abbrev
+;; Homepage: https://github.com/grettke/initialism
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +24,9 @@
 
 ;;; Commentary:
 
-;;
+;; Interactively create initialisms using `initialism-dispatch'.
+
+;; Call `initialism-help' to review the workflow.
 
 ;;; Code:
 
