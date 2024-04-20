@@ -67,6 +67,6 @@
         letters of either. /ASAP/ and /appt/ (for /appointment/) are both considered
         abbreviations, but only /ASAP/ is an acronym. Acronyms are a type of
         abbreviation.
-  - "Abbreviation." Merriam-Webster.com Dictionary, Merriam-Webster,
+  - Source: "Abbreviation." Merriam-Webster.com Dictionary, Merriam-Webster,
     https://www.merriam-webster.com/dictionary/abbreviation. Accessed 19
     Apr. 2024.
