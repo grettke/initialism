@@ -6,7 +6,62 @@
 :END:
 :CONTENTS:
 - [[#usage][Usage]]
+- [[#definitions][Definitions]]
 :END:
 
 * Usage
+* Definitions
 
+- initialism :: :an abbreviation formed from initial letters
+  - Source: "Initialism." Merriam-Webster.com Dictionary, Merriam-Webster,
+    https://www.merriam-webster.com/dictionary/initialism. Accessed 19
+    Apr. 2024.
+- acronym :: :a word (such as /NATO/, /radar/, or /laser/) formed from the
+  initial letter or letters of each of the successive parts or major parts of a
+  compound term
+  - /also/ :an abbreviation (such as FBI) formed from initial letters:
+    initialism
+  - Frequently Asked Questions
+    - What is the difference between an acronym and an initialism?
+      - Both acronyms and initialisms are made up of the first letter or letters
+        of the words in a phrase. The word /acronym/ typically applies when the
+        resulting thing can be read as a word; for example, /radar/ comes from
+        "/ra/dio /d/etection /a/nd /r/anging" and /scuba/ comes from
+        "/s/elf-/c/ontained /u/nderwater /b/reathing /a/pparatus." The word
+        /initialism/ only applies when the resulting thing is read as an
+        abbreviation; for example /DIY/, which comes from "/d/o /i/t
+        /y/ourself," is pronounced by saying the names of the letters. Note that
+        the word /acronym/ is also sometimes used to mean "initialism."
+    - What is the difference between an acronym and an abbreviation?
+      - An acronym is a kind of abbreviation. Abbreviations can be shortened
+        forms of any kind. For example, /appt/ is an abbreviation of
+        /appointment/, and /ASAP/ is an abbreviation of /a/s /s/oon /a/s
+        /p/ossible. /ASAP/, however, also qualifies as an acronym because it is
+        made up of the initial letters of the phrase it comes from: /a/s /s/oon
+        /a/s /p/ossible.
+    - Is OK an acronym?
+      - /OK/ is technically an acronym. It comes from the phrase "oll korrect," a
+        humorous alteration of "all correct."
+  - Examples of acronym in a Sentence
+    - The North Atlantic Treaty Organization is known by the /acronym/ "NATO."
+  - Source: "Acronym." Merriam-Webster.com Dictionary, Merriam-Webster,
+    https://www.merriam-webster.com/dictionary/acronym. Accessed 19 Apr. 2024.
+- abbreviation :: :a shortened form of a written word or phrase used in place of
+  the whole word or phrase
+  - "Amt" is an /abbreviation/ for "amount."
+  - "USA" is an /abbreviation/ of "United States of America."
+  - Did you know?
+    - What's the difference between an /abbreviation/ and an /acronym/?
+      - Some people are unsure of whether to call /ASAP/ or /appt/ abbreviations or
+        acronyms. Both /abbreviation/ and /acronym/ are used to refer to a shortened
+        form, but an acronym is a shortened form of a phrase and is usually made
+        up of the initial letters of that phrase. For example, /NATO/ comes from
+        "North Atlantic Treaty Organization," and /ASAP/ comes from "as soon as
+        possible." Abbreviations, on the other hand, can be shortened forms of
+        words or phrases, and need not necessarily be made up of the initial
+        letters of either. /ASAP/ and /appt/ (for /appointment/) are both considered
+        abbreviations, but only /ASAP/ is an acronym. Acronyms are a type of
+        abbreviation.
+  - "Abbreviation." Merriam-Webster.com Dictionary, Merriam-Webster,
+    https://www.merriam-webster.com/dictionary/abbreviation. Accessed 19
+    Apr. 2024.
