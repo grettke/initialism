@@ -26,19 +26,19 @@
       - Both acronyms and initialisms are made up of the first letter or letters
         of the words in a phrase. The word /acronym/ typically applies when the
         resulting thing can be read as a word; for example, /radar/ comes from
-        "/ra/dio /d/etection /a/nd /r/anging" and /scuba/ comes from
-        "/s/elf-/c/ontained /u/nderwater /b/reathing /a/pparatus." The word
+        "«ra»dio «d»etection «a»nd «r»anging" and «scuba» comes from
+        "«s»elf-«c»ontained «u»nderwater «b»reathing «a»pparatus." The word
         /initialism/ only applies when the resulting thing is read as an
-        abbreviation; for example /DIY/, which comes from "/d/o /i/t
-        /y/ourself," is pronounced by saying the names of the letters. Note that
+        abbreviation; for example /DIY/, which comes from "«d»o «i»t
+        «y»ourself," is pronounced by saying the names of the letters. Note that
         the word /acronym/ is also sometimes used to mean "initialism."
     - What is the difference between an acronym and an abbreviation?
       - An acronym is a kind of abbreviation. Abbreviations can be shortened
         forms of any kind. For example, /appt/ is an abbreviation of
-        /appointment/, and /ASAP/ is an abbreviation of /a/s /s/oon /a/s
-        /p/ossible. /ASAP/, however, also qualifies as an acronym because it is
-        made up of the initial letters of the phrase it comes from: /a/s /s/oon
-        /a/s /p/ossible.
+        /appointment/, and /ASAP/ is an abbreviation of «a»s «s»oon «a»s
+        «p»ossible. /ASAP/, however, also qualifies as an acronym because it is
+        made up of the initial letters of the phrase it comes from: «a»s «s»oon «a»s
+        «p»ossible.
     - Is OK an acronym?
       - /OK/ is technically an acronym. It comes from the phrase "oll korrect," a
         humorous alteration of "all correct."
