@@ -12,8 +12,8 @@
 
 * Usage
 
-In this example create an initialism from the phrase "Eventually Munches All
-Computer Storage".
+In this example create the initialism =EMACS= from the phrase "Eventually
+Munches All Computer Storage".
 
 Start by positioning the Cursor at the start of the first word. Call
 ~initialism-dispatch~. Notice that the value of the initialism appears in the
