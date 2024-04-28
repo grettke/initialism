@@ -60,7 +60,7 @@ Insert the initialism value by calling ~C-u C-u initialism-dispatch~.
 
 #+begin_src text
 /@\
-/(EMACS)\
+/(EMACS)@\
 #+end_src
 
 If you don't like the format of the initialism you can modify it yourself. Behind
