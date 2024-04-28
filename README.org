@@ -17,15 +17,15 @@ Computer Storage".
 
 Start by positioning the Cursor at the start of the first word. Call
 ~initialism-dispatch~. Notice that the value of the initialism appears in the
-Echo Area; and the Cursor moves one step forward. Call ~initialism-dispatch~
-again and the Cursor moves but nothing appears in the Echo Area. You can't make
-an initialism using whitespace characters so it is ignored. Call
+Echo Area, and the Cursor moves one step forward. Call ~initialism-dispatch~
+again, and the Cursor moves, but nothing appears in the Echo Area. You can't make
+an initialism using whitespace characters, so it is ignored. Call
 ~initialism-dispatch~ noting that the current initialism value is again
-displayed in the Echo Area and the Cursor moves forward, this time with an
+displayed in the Echo Area, and the Cursor moves forward, this time with an
 additional character appended. Call
-~initialism-dispatch~ and the space character is then ignored. As you repeatedly
-call ~initialism-dispatch~ you can watch the initialism built until you finally
-reach the end of the line and I don't know how to proceed.
+~initialism-dispatch~, and the space character is then ignored. As you repeatedly
+call ~initialism-dispatch~, you can watch the initialism built until you finally
+reach the end of the line, and I don't know how to proceed.
 
 /@ represents the cursor location/
 
@@ -42,12 +42,12 @@ Eventually Munches All Computer @Storage
 (EMACS)
 #+end_src
 
-Surely now you must be asking yourself "But why can't you handle the end of line
-character my dear system?" The answer is simple: it makes it easy for you create
-initialism starting from wherever you like, skipping or whatever you wish, there
-are no limits on the source of your initialism. Therefore I assume nothing
-beyond the fact that initialism are built using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character Classes]]
-=[[:alnum:]]= and =[[:punct:]]=
+Indeed, now you must ask yourself, "But why can’t you handle the end-of-line
+character, my dear system?" The answer is simple: it makes it easy for you to
+create initialism starting from wherever you like, skipping, or whatever you
+wish; there are no limits on the source of your initialism. Therefore, I assume
+nothing beyond the fact that initialism is built using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character
+Classes]] =[[:alnum:]]= and =[[:punct:]]=
 
 Review the initialism value by calling ~C-u initialism-dispatch~ and noting in
 the Echo Area.
@@ -68,6 +68,12 @@ the scenes the actual initialism data, the /Model/, is stored in a private
 variable that you will never touch. What you actually see presented from that
 data, the /View/, is the result of formatting the /Model/ with
 ~initialism-format-string~ where the /Model/ is the argument.
+
+It's important to understand that the format of the initialism is separate from
+the data itself. The actual initialism data, the /Model/, is stored in a private
+variable that you won't need to touch. What you see presented from that data,
+the /View/, is the result of formatting the /Model with the
+~initialism-format-string~, which you can modify to your liking.
 
 Consider this example so far.
 
@@ -90,9 +96,15 @@ note in the Echo Area the message.
 
 This example reflects the typical workflow building an initialism. Call
 ~initialism-help~ to review the workflow. If you want to call the individual
-functions for each workflow step you'll also find their names too.
+functions for each workflow step, you'll also find their names too.
 
 Now start creating your next initialism.
+
+This example reflects the typical workflow for building an initialism. Call
+~initialism-help~ to review the workflow. If you want to call the individual
+functions for each workflow step, you'll also find their names.
+
+Now, start creating your next initialism.
 
 * Is It An Initialism, Acronym, or Abbreviation?
 
