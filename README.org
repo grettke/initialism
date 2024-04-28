@@ -11,6 +11,11 @@
   - [[#inserting][Inserting]]
   - [[#deleting][Deleting]]
   - [[#continuing][Continuing]]
+- [[#installation][Installation]]
+  - [[#traditional][Traditional]]
+  - [[#package][Package]]
+    - [[#manually][Manually]]
+    - [[#automatically][Automatically]]
 - [[#is-it-an-initialism-acronym-or-abbreviation][Is It An Initialism, Acronym, or Abbreviation?]]
 - [[#definitions][Definitions]]
 :END:
@@ -112,6 +117,28 @@ doesn't work right, start there, and if I failed you, please create a support
 ticket.
 
 Now, start creating your next initialism.
+
+* Installation
+
+** Traditional
+
+Download =initialism.el= into =~/src= and add this to your configuration file:
+
+#+begin_src emacs-lisp
+(add-to-list 'load-path "~/src")
+(require 'initialism)
+#+end_src
+
+** Package
+*** Manually
+
+Download =initialism.el=, call ~package-install-file~, and specify that file.
+
+Add ~(require 'initialism)~ to your configuration file.
+
+*** Automatically
+
+Eventually this will get added to [[https://melpa.org/#/][MELPA]].
 
 * Is It An Initialism, Acronym, or Abbreviation?
 
