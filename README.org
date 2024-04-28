@@ -44,10 +44,10 @@ Eventually Munches All Computer @Storage
 
 Indeed, now you must ask yourself, "But why can’t you handle the end-of-line
 character, my dear system?" The answer is simple: it makes it easy for you to
-create initialism starting from wherever you like, skipping, or whatever you
-wish; there are no limits on the source of your initialism. Therefore, I assume
-nothing beyond the fact that initialism is built using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character
-Classes]] =[[:alnum:]]= and =[[:punct:]]=
+create initialism starting from wherever you like, skipping lines, paragraphs,
+or whatever you wish; there are no limits on the source and sequencing of your
+initialism. Therefore, I assume nothing beyond the fact that initialism is built
+using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character Classes]] =[[:alnum:]]= and =[[:punct:]]=
 
 Review the initialism value by calling ~C-u initialism-dispatch~ and noting in
 the Echo Area.
@@ -63,16 +63,10 @@ Insert the initialism value by calling ~C-u C-u initialism-dispatch~.
 /(EMACS)@\
 #+end_src
 
-If you don't like the format of the initialism you can modify it yourself. Behind
-the scenes the actual initialism data, the /Model/, is stored in a private
-variable that you will never touch. What you actually see presented from that
-data, the /View/, is the result of formatting the /Model/ with
-~initialism-format-string~ where the /Model/ is the argument.
-
 It's important to understand that the format of the initialism is separate from
 the data itself. The actual initialism data, the /Model/, is stored in a private
 variable that you won't need to touch. What you see presented from that data,
-the /View/, is the result of formatting the /Model with the
+the /View/, is the result of formatting the /Model/ with the
 ~initialism-format-string~, which you can modify to your liking.
 
 Consider this example so far.
@@ -82,7 +76,7 @@ Consider this example so far.
 
 Imagine that you want to format the initialism as bold text in LaTeX without
 parentheses around it. Use ~customize~ to customize ~initialism-format-string~
-with =\textbf{%s}= and you now end up with
+with the value =\textbf{%s}= and you now end up with
 
 - The /Model/: EMACS
 - The /View/: =\textbf{EMACS}=
@@ -94,15 +88,13 @@ note in the Echo Area the message.
 (initialism) View deleted.
 #+end_src
 
-This example reflects the typical workflow building an initialism. Call
-~initialism-help~ to review the workflow. If you want to call the individual
-functions for each workflow step, you'll also find their names too.
-
-Now start creating your next initialism.
-
 This example reflects the typical workflow for building an initialism. Call
 ~initialism-help~ to review the workflow. If you want to call the individual
 functions for each workflow step, you'll also find their names.
+
+Whenever I work, I try to explain what I'm doing in the Echo Area. If something
+doesn't work right, start there, and if I failed you, please create a support
+ticket.
 
 Now, start creating your next initialism.
 
