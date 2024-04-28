@@ -20,6 +20,20 @@
 - [[#definitions][Definitions]]
 :END:
 
+* Justification For Existence
+
+This tool makes memorizing scripts easier!
+
+Q. Why bother writing a program to create initialisms for you when you can just
+   do it by hand?
+A. For a few sentences, yes, that is easy. For an entire script, however, it is
+   tedious, error-prone, and difficult. This program works perfectly for you
+   every time and lets you format the output with whatever format you like. Try
+   it yourself and if you brain likes it, then you will love it.
+
+Before using this library, watch [[https://www.youtube.com/watch?v=Jbe1-oHnR6k][Lauren Tothero]] explain how this technique
+works.
+
 * Usage
 
 In this example create the initialism =EMACS= from the phrase "Eventually
