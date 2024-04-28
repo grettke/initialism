@@ -6,6 +6,11 @@
 :END:
 :CONTENTS:
 - [[#usage][Usage]]
+  - [[#building][Building]]
+  - [[#reviewing][Reviewing]]
+  - [[#inserting][Inserting]]
+  - [[#deleting][Deleting]]
+  - [[#continuing][Continuing]]
 - [[#is-it-an-initialism-acronym-or-abbreviation][Is It An Initialism, Acronym, or Abbreviation?]]
 - [[#definitions][Definitions]]
 :END:
