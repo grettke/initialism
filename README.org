@@ -35,6 +35,9 @@ ease and convenience for yourself―your brain will love it!
 
 * Usage
 
+- Add preview of the workflow and demonstrate it with this example
+- Add function for raw access
+
 In this example create the initialism =EMACS= from the phrase "Eventually
 Munches All Computer Storage".
 
@@ -110,10 +113,10 @@ with the value =\textbf{%s}= and you now end up with
 - The /Model/: EMACS
 - The /View/: =\textbf{EMACS}=
 
+** Deleting
+
 Delete the initialism value by calling ~C-u C-u C-u initialism-dispatch~ and
 note in the Echo Area the message.
-
-** Deleting
 
 #+begin_src text
 (initialism) View deleted.
