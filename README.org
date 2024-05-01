@@ -52,7 +52,7 @@ additional character appended. Call
 call ~initialism-dispatch~, you can watch the initialism built until you finally
 reach the end of the line, and I don't know how to proceed.
 
-/@ represents the cursor location/
+/@ represents the cursor location before calling ~initialism-dispatch~/
 
 #+begin_src text
 @Eventually Munches All Computer Storage
