@@ -24,9 +24,17 @@
 
 ;;; Commentary:
 
-;; Interactively create initialisms using `initialism-dispatch'.
-
-;; Call `initialism-help' to review the workflow.
+;; *This tool makes memorizing scripts and speachers easier!*
+;;
+;; Why struggle with the tedious and error-prone task of creating
+;; initialisms for an entire script by hand? This program does it
+;; with impeccable precision for you every time, allowing you to
+;; format the output to your liking. Experience the ease and
+;; convenience for yourself―your brain will love it!
+;;
+;; - Before using this program
+;;  - Watch Lauren Tothero explain how this technique works
+;;    - https://www.youtube.com/watch?v=Jbe1-oHnR6k
 
 ;;; Code:
 
