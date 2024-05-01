@@ -113,6 +113,8 @@ with the value =\textbf{%s}= and you now end up with
 - The /Model/: EMACS
 - The /View/: =\textbf{EMACS}=
 
+/Note: if you need the model's value then call ~~/
+
 ** Deleting
 
 Delete the initialism value by calling ~C-u C-u C-u initialism-dispatch~ and
