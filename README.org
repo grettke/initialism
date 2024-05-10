@@ -35,10 +35,14 @@ ease and convenience for yourself―your brain will love it!
 
 * Usage
 
-- Add preview of the workflow and demonstrate it with this example
-
 In this example create the initialism =EMACS= from the phrase "Eventually
-Munches All Computer Storage".
+Munches All Computer Storage" following the most frequently used functions in
+order of the typical workflow.
+
+- Building it
+- Reviewing it
+- Inserting it
+- Deleting it
 
 ** Building
 
