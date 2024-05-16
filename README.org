@@ -13,7 +13,7 @@
   - [[#deleting][Deleting]]
   - [[#continuing][Continuing]]
 - [[#frequently-answered-questions][Frequently Answered Questions]]
-  - No End Of Line Support
+  - [[#no-end-of-line-support][No End Of Line Support]]
 - [[#installation][Installation]]
   - [[#traditional][Traditional]]
   - [[#package][Package]]
