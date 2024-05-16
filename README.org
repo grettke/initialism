@@ -61,7 +61,7 @@ additional character appended. Call
 call ~initialism-dispatch~, you can watch the initialism built until you finally
 reach the end of the line, and I don't know how to proceed.
 
-/@ represents the cursor location before calling ~initialism-dispatch~/
+/@ represents the cursor location before calling/ ~initialism-dispatch~
 
 #+begin_src text
 @Eventually Munches All Computer Storage
@@ -112,7 +112,7 @@ with the value =\textbf{%s}= and you now end up with
 - The /Model/: EMACS
 - The /View/: =\textbf{EMACS}=
 
-/Note: if you need the model's value then call ~initialism-get-model~/
+/Note: if you need the model's value then call/ ~initialism-get-model~
 
 ** Deleting
 
