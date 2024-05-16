@@ -75,7 +75,7 @@ Eventually Munches All Computer @Storage
 (EMACS)
 #+end_src
 
-Wondering why [[#dont-handle-eol][I don't handle end-of-lines?]]
+Wondering why [[Why don't you handle the end-of-line character][I don't handle end-of-lines?]]
 
 ** Reviewing
 
@@ -138,9 +138,6 @@ Now, start creating your next initialism.
 
 * Frequently Answered Questions
 *** Why don't you handle the end-of-line character
-:PROPERTIES:
-:CUSTOM_ID:       dont-handle-eol
-:END:
 
 Indeed, now you must ask yourself, "But why cant you handle the end-of-line
 character, my dear system?" The answer is simple: it makes it easy for you to
