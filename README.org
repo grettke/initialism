@@ -22,6 +22,7 @@
 - [[#frequently-answered-questions][Frequently Answered Questions]]
   - [[#no-end-of-line-support][No End Of Line Support]]
   - [[#no-region-processing][No Region Processing]]
+  - [[#no-insertion-processing-function][No Insertion-Processing Function]]
 :END:
 
 * Justification For Existence
@@ -38,9 +39,9 @@ ease and convenience for yourself―your brain will love it!
 
 * Usage
 
-In this example create the initialism =EMACS= from the phrase "Eventually
-Munches All Computer Storage" following the most frequently used functions in
-order of the typical workflow.
+In this example, create the initialism =EMACS= from the phrase "Eventually
+Munches All Computer Storage," following the most frequently used functions in
+the typical workflow's order.
 
 - Building it
 - Reviewing it
@@ -233,7 +234,7 @@ that goes against the workflow of iteratively creating the initialism. Once in a
 while, your words will work /perfectly/ for an enormous amount of text, but that
 is rare enough to omit the feature.
 
-*** No Processing Function
+*** No Insertion-Processing Function
 
 Suppose you always want to process the Model with a post-processing every time
 you insert it into the buffer. Providing a "default customizable function to
