@@ -75,7 +75,7 @@ Eventually Munches All Computer @Storage
 (EMACS)
 #+end_src
 
-Wondering why there is [[No End Of Line Support][No End Of Line Support]]?
+Wondering why there is [[#no-end-of-line-support][No End Of Line Support]]?
 
 ** Reviewing
 
