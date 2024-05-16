@@ -13,7 +13,7 @@
   - [[#deleting][Deleting]]
   - [[#continuing][Continuing]]
 - [[#frequently-answered-questions][Frequently Answered Questions]]
-  - [[#dont-handle-eol][Why don't you handle the end-of-line character]]
+  - [[#no-end-of-line-support][No End Of Line Support]]
 - [[#installation][Installation]]
   - [[#traditional][Traditional]]
   - [[#package][Package]]
