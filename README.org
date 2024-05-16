@@ -12,6 +12,8 @@
   - [[#inserting][Inserting]]
   - [[#deleting][Deleting]]
   - [[#continuing][Continuing]]
+- [[#frequently-answered-questions][Frequently Answered Questions]]
+  - [[#dont-handle-eol][Why don't you handle the end-of-line character]]
 - [[#installation][Installation]]
   - [[#traditional][Traditional]]
   - [[#package][Package]]
@@ -73,12 +75,7 @@ Eventually Munches All Computer @Storage
 (EMACS)
 #+end_src
 
-Indeed, now you must ask yourself, "But why can’t you handle the end-of-line
-character, my dear system?" The answer is simple: it makes it easy for you to
-create initialism starting from wherever you like, skipping lines, paragraphs,
-or whatever you wish; there are no limits on the source and sequencing of your
-initialism. Therefore, I assume nothing beyond the fact that initialism is built
-using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character Classes]] =[[:alnum:]]= and =[[:punct:]]=
+Wondering why [[#dont-handle-eol][I don't handle end-of-lines?]]
 
 ** Reviewing
 
@@ -138,6 +135,19 @@ doesn't work right, start there, and if I failed you, please create a support
 ticket.
 
 Now, start creating your next initialism.
+
+* Frequently Answered Questions
+*** Why don't you handle the end-of-line character
+:PROPERTIES:
+:CUSTOM_ID:       dont-handle-eol
+:END:
+
+Indeed, now you must ask yourself, "But why cant you handle the end-of-line
+character, my dear system?" The answer is simple: it makes it easy for you to
+create initialism starting from wherever you like, skipping lines, paragraphs,
+or whatever you wish; there are no limits on the source and sequencing of your
+initialism. Therefore, I assume nothing beyond the fact that initialism is built
+using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character Classes]] =[[:alnum:]]= and =[[:punct:]]=
 
 * Installation
 
