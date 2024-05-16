@@ -75,7 +75,7 @@ Eventually Munches All Computer @Storage
 (EMACS)
 #+end_src
 
-Wondering why [[Why don't you handle the end-of-line character][I don't handle end-of-lines?]]
+Wondering why there is [[No End Of Line Support]]?
 
 ** Reviewing
 
@@ -137,7 +137,7 @@ ticket.
 Now, start creating your next initialism.
 
 * Frequently Answered Questions
-*** Why don't you handle the end-of-line character
+*** No End Of Line Support
 
 Indeed, now you must ask yourself, "But why cant you handle the end-of-line
 character, my dear system?" The answer is simple: it makes it easy for you to
