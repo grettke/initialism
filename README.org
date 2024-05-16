@@ -12,9 +12,6 @@
   - [[#inserting][Inserting]]
   - [[#deleting][Deleting]]
   - [[#continuing][Continuing]]
-- [[#frequently-answered-questions][Frequently Answered Questions]]
-  - [[#no-end-of-line-support][No End Of Line Support]]
-  - [[#no-region-processing][No Region Processing]]
 - [[#installation][Installation]]
   - [[#traditional][Traditional]]
   - [[#package][Package]]
@@ -22,6 +19,9 @@
     - [[#automatically][Automatically]]
 - [[#is-it-an-initialism-acronym-or-abbreviation][Is It An Initialism, Acronym, or Abbreviation?]]
 - [[#definitions][Definitions]]
+- [[#frequently-answered-questions][Frequently Answered Questions]]
+  - [[#no-end-of-line-support][No End Of Line Support]]
+  - [[#no-region-processing][No Region Processing]]
 :END:
 
 * Justification For Existence
@@ -135,23 +135,6 @@ ticket.
 
 Now, start creating your next initialism.
 
-* Frequently Answered Questions
-*** No End Of Line Support
-
-Indeed, now you must ask yourself, "But why cant you handle the end-of-line
-character, my dear system?" The answer is simple: it makes it easy for you to
-create initialism starting from wherever you like, skipping lines, paragraphs,
-or whatever you wish; there are no limits on the source and sequencing of your
-initialism. Therefore, I assume nothing beyond the fact that initialism is built
-using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character Classes]] =[[:alnum:]]= and =[[:punct:]]=
-
-*** No Region Processing
-
-It might sound like a good idea to support processing a marked region. However,
-that goes against the workflow of iteratively creating the initialism. Once in a
-while, your words will work /perfectly/ for an enormous amount of text, but that
-is rare enough to omit the feature.
-
 * Installation
 
 ** Traditional
@@ -233,3 +216,20 @@ Eventually this will get added to [[https://melpa.org/#/][MELPA]].
   - Source: "Abbreviation." Merriam-Webster.com Dictionary, Merriam-Webster,
     https://www.merriam-webster.com/dictionary/abbreviation. Accessed 19
     Apr. 2024.
+* Frequently Answered Questions
+*** No End Of Line Support
+
+Indeed, now you must ask yourself, "But why cant you handle the end-of-line
+character, my dear system?" The answer is simple: it makes it easy for you to
+create initialism starting from wherever you like, skipping lines, paragraphs,
+or whatever you wish; there are no limits on the source and sequencing of your
+initialism. Therefore, I assume nothing beyond the fact that initialism is built
+using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character Classes]] =[[:alnum:]]= and =[[:punct:]]=
+
+*** No Region Processing
+
+It might sound like a good idea to support processing a marked region. However,
+that goes against the workflow of iteratively creating the initialism. Once in a
+while, your words will work /perfectly/ for an enormous amount of text, but that
+is rare enough to omit the feature.
+
