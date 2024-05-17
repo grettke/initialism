@@ -26,6 +26,7 @@
   - [[#no-insertion-post-processing-function][No Insertion Post-Processing Function]]
   - [[#other-initialism-creators][Other Initialism Creators]]
   - [[#no-rebus-generation][No Rebus Generation]]
+  - [[#this-is-perfect-for-prefix-arguments][This Is Perfect For Prefix Arguments]]
 :END:
 
 * Justification For Existence
@@ -289,3 +290,16 @@ This application does not generate rebuses.
     https://www.merriam-webster.com/dictionary/rebus. Accessed 17 May. 2024.
 
 While interesting, they are generally unrelated to the goals of this project.
+
+*** This Is Perfect For Prefix Arguments
+
+~initialism-dispatch~ delegates work to four other functions (see above). Why
+not bind keys to each of them instead? You can and should: it is all personal
+preference.
+
+Given the workflow above, the four steps of building an initialism prefix
+arguments feel like a natural approach. Specifically, when you follow the
+workflow, you are /already/ taking "breaks" between the steps. Creating them
+doesn't require lightning; it makes the task harder. Consequently, prefix
+arguments get you back into the mindset of making it easy to develop
+initialisms.
