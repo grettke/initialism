@@ -98,7 +98,7 @@ Eventually Munches All Computer @Storage
 
 ** Reviewing
 
-Review the initialism value by calling ~C-u initialism-dispatch~ and noting in
+Review the initialism value by calling ~C-u initialism-dispatch~ and observing
 the Echo Area.
 
 #+begin_src text
