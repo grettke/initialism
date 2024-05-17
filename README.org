@@ -23,7 +23,7 @@
   - [[#no-end-of-line-support][No End Of Line Support]]
   - [[#no-region-processing][No Region Processing]]
   - [[#no-insertion-processing-function][No Insertion-Processing Function]]
-  - [[#are-there-any-other-initialism-creators][Are There Any Other Initialism Creators?]]
+  - [[#other-initialism-creators][Other Initialism Creators?]]
 :END:
 
 * Justification For Existence
@@ -244,7 +244,7 @@ the Model into separate boxes in LaTeX. However, if you already know how to
 perform this step using your function, it doesn't add much value using a
 configurable function in addition to that.
 
-*** Are There Any Other Initialism Creators?
+*** Other Initialism Creators
 
 Since every acronym is an initialism, you will [[https://duckduckgo.com/?q=acronym+generator][find many]]. However, I've yet to
 find an interactive app like this one. Understandably, though, this is a
