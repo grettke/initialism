@@ -1,4 +1,4 @@
-;;; initialism.el --- Create an abbreviation formed from initial letters  -*- lexical-binding: t; -*-
+;;; initialism.el --- Create a word formed from initial letters  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2024 Grant Rettke
 
@@ -42,7 +42,7 @@
 
 (defgroup initialism
   '((initialism-format-string custom-variable))
-  "Create an abbreviation formed from initial letters."
+  "Create a word formed from initial letters."
   :group 'abbrev)
 
 (defvar initialism--model nil
