@@ -24,6 +24,7 @@
   - [[#no-region-processing][No Region Processing]]
   - [[#no-insertion-post-processing-function][No Insertion Post-Processing Function]]
   - [[#other-initialism-creators][Other Initialism Creators]]
+  - [[#no-rebus-generation][No Rebus Generation]]
 :END:
 
 * Justification For Existence
@@ -251,3 +252,24 @@ find an interactive app like this one. Understandably, though, this is a
 specialized approach.
 
 That said, the [[https://www.dcode.fr/about][dCode]] application is entertaining.
+
+*** No Rebus Generation
+
+This application does not generate rebuses.
+
+- rebus :: : a representation of words or syllables by pictures of objects or by
+  symbols whose names resemble the intended words or syllables in sound
+  - /also/ : a riddle made up of such pictures or symbols
+  - Did you know?
+    - /Rebus/ and a Lack of Words
+      - A rebus communicates its message by means of pictures or symbols whose
+        names sound like various parts of a word, phrase, or sentence. For
+        example, a picture of a can of tomatoes followed by the letters UC and a
+        picture of a well means "Can you see well?" In Latin, the word /rebus/
+        means "by things"; /rebus/ is a form of the Latin word /res/, which means
+        "thing." English speakers started using the word /rebus/ for picture
+        writing in the early 1600s.
+  - Source: "Rebus" Merriam-Webster.com Dictionary, Merriam-Webster,
+    https://www.merriam-webster.com/dictionary/rebus. Accessed 17 May. 2024.
+
+While interesting, they are generally unrelated to the goals of this project.
