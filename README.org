@@ -6,6 +6,7 @@
 :END:
 :CONTENTS:
 - [[#justification-for-existence][Justification For Existence]]
+- [[#keybinding][Keybinding]]
 - [[#usage][Usage]]
   - [[#building][Building]]
   - [[#reviewing][Reviewing]]
@@ -38,6 +39,20 @@ ease and convenience for yourself―your brain will love it!
 
 - Before using this program
   - Watch [[https://www.youtube.com/watch?v=Jbe1-oHnR6k][Lauren Tothero]] explain how this technique works
+
+* Keybinding
+
+For easier usage―keybind ~initialism-dispatch~.
+
+~A-N~ is particularly nice to avoid stomping on existing bindings.
+
+Even better: make it available *everywhere*.
+
+Here is how:
+
+#+begin_src emacs-lisp
+(global-set-key [(alt shift ?n)] #'initialism-dispatch)
+#+end_src
 
 * Usage
 
