@@ -234,6 +234,7 @@ Eventually this will get added to [[https://melpa.org/#/][MELPA]].
   - Source: "Abbreviation." Merriam-Webster.com Dictionary, Merriam-Webster,
     https://www.merriam-webster.com/dictionary/abbreviation. Accessed 19
     Apr. 2024.
+
 * Frequently Answered Questions
 *** No End Of Line Support
 
