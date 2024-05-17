@@ -27,6 +27,7 @@
   - [[#other-initialism-creators][Other Initialism Creators]]
   - [[#no-rebus-generation][No Rebus Generation]]
   - [[#this-is-perfect-for-prefix-arguments][This Is Perfect For Prefix Arguments]]
+  - [[#it-isnt-named-acronym-or-abbreivate][It Isn't Named Acronym or Abbreivate]]
 :END:
 
 * Justification For Existence
@@ -303,3 +304,15 @@ workflow, you are /already/ taking "breaks" between the steps. Creating them
 doesn't require lightning; it makes the task harder. Consequently, prefix
 arguments get you back into the mindset of making it easy to develop
 initialisms.
+
+*** It Isn't Named Acronym or Abbreivate
+
+Shouldn't it be named Acronym or abbreviated? No, neither should be.
+
+Every /acronym/ is an /initialism/, but not vice versa. You must design the
+words of the /acronym/ yourself and then use this library to create it. This library doesn't help you choose those words.
+
+An /abbreviation/ is a shortened or contracted phrase. It might be an
+/initialism/, an/acronym/, or more. This library doesn't help you figure out how to build the last two.
+
+Consequently, it /should/ be named Initialism.
