@@ -22,8 +22,8 @@
 - [[#frequently-answered-questions][Frequently Answered Questions]]
   - [[#no-end-of-line-support][No End Of Line Support]]
   - [[#no-region-processing][No Region Processing]]
-  - [[#no-insertion-processing-function][No Insertion-Processing Function]]
-  - [[#other-initialism-creators][Other Initialism Creators?]]
+  - [[#no-insertion-post-processing-function][No Insertion Post-Processing Function]]
+  - [[#other-initialism-creators][Other Initialism Creators]]
 :END:
 
 * Justification For Existence
@@ -235,7 +235,7 @@ that goes against the workflow of iteratively creating the initialism. Once in a
 while, your words will work /perfectly/ for an enormous amount of text, but that
 is rare enough to omit the feature.
 
-*** No Insertion-Processing Function
+*** No Insertion Post-Processing Function
 
 Suppose you always want to process the Model with a post-processing every time
 you insert it into the buffer. Providing a "default customizable function to
