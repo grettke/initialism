@@ -60,12 +60,18 @@ Here is how:
 
 In this example, create the initialism =EMACS= from the phrase "Eventually
 Munches All Computer Storage," following the most frequently used functions in
-the typical workflow's order.
+the typical workflow's order. You can use the dispatcher function to do the work
+using prefix arguments or call the functions individually. This example uses
+prefix arguments:
 
 - Building it
+  - ~initialism-dispatch~: Calls ~initialism-build~
 - Reviewing it
+  - ~C-u initialism-dispatch~: Calls ~initialism-view~
 - Inserting it
+  - ~C-u C-u initialism-dispatch~: Calls ~initialism-insert~
 - Deleting it
+  - ~C-u C-u C-u initialism-dispatch~: Calls ~initialism-delete~
 
 ** Building
 
