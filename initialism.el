@@ -62,7 +62,7 @@
          nil)))
 
 (cl-defun initialism-build ()
-  "Incrementally builds initialism using character under cursor.
+  "Incrementally build the model using the character under the cursor.
 
 - Q. Initialisms are created using the first letter of a word.
      However, this function includes both letters and non-letters
@@ -89,7 +89,7 @@
               forward-type))))))
 
 (defun initialism-view ()
-  "Presents information to the user."
+  "Present the view to the user."
   (interactive)
   (if (initialism--format) (message (initialism--format))
     (message "(initialism) Sorry, I don't have a value to display")))
@@ -103,7 +103,7 @@
         (t (message "(initialism) Sorry, I don't have a value to insert"))))
 
 (defun initialism-delete ()
-  "Deletes view."
+  "Delete the model."
   (interactive)
   (cond (initialism--model
          (setq initialism--model nil)
