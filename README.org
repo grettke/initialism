@@ -77,7 +77,9 @@ prefix arguments:
 
 Start by positioning the Cursor at the start of the first word. Call
 ~initialism-dispatch~. Notice that the value of the initialism appears in the
-Echo Area, and the Cursor moves one step forward. Call ~initialism-dispatch~
+Echo Area. The message is prefixed with the model length purely to assist in
+understanding the model assembly process: it is NOT part of the underlying model
+itself. Then the Cursor moves one step forward. Call ~initialism-dispatch~
 again, and the Cursor moves, but nothing appears in the Echo Area. You can't make
 an initialism using whitespace characters, so it is ignored. Call
 ~initialism-dispatch~ noting that the current initialism value is again
