@@ -142,16 +142,6 @@ Usage:
   (interactive)
   (describe-symbol 'initialism-dispatch))
 
-(defun initialism-get-model ()
-  "Get the Model value.
-
-Only use from code; never interactively.
-
-If you want \"see\" the value you probably want
-`initialism-view' instead."
-  (let ((result initialism--model))
-    result))
-
 (provide 'initialism)
 ;;; initialism.el ends here
 
