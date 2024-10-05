@@ -104,6 +104,8 @@ Eventually Munches All Computer @Storage
 (EMACS)
 #+end_src
 
+/Thank you ~emacs-name~ for the acronym~/
+
 ** Reviewing
 
 Review the initialism value by calling ~C-u initialism-dispatch~ and observing
