@@ -103,10 +103,14 @@ the underlying model itself."
     (message "(initialism) Sorry, I don't have a value to display")))
 
 (defun initialism-insert ()
-  "Insert the view."
+  "Insert the view.
+
+For convenience, the inserted value is also added to the `kill-ring'."
   (interactive)
   (cond (initialism--model
-         (insert (initialism--format))
+         (let ((it (initialism--format)))
+           (kill-new it)
+           (insert it))
          (message "(initialism) View inserted."))
         (t (message "(initialism) Sorry, I don't have a value to insert"))))
 
