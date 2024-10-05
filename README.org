@@ -117,6 +117,8 @@ the Echo Area.
 
 Insert the initialism value by calling ~C-u C-u initialism-dispatch~.
 
+For convenience, the inserted value is also added to the ~kill-ring~.
+
 #+begin_src text
 /@\
 /(EMACS)@\
