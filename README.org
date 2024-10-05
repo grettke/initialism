@@ -6,7 +6,7 @@
 :END:
 :CONTENTS:
 - [[#justification-for-existence][Justification For Existence]]
-- [[#keybinding][Keybinding]]
+- [[#key-binding][Key Binding]]
 - [[#usage][Usage]]
   - [[#building][Building]]
   - [[#reviewing][Reviewing]]
@@ -42,9 +42,9 @@ ease and convenience for yourself―your brain will love it!
 - Before using this program
   - Watch [[https://www.youtube.com/watch?v=Jbe1-oHnR6k][Lauren Tothero]] explain how this technique works
 
-* Keybinding
+* Key Binding
 
-For easier usage―keybind ~initialism-dispatch~.
+For easier usage―key bind ~initialism-dispatch~.
 
 ~A-N~ is particularly nice to avoid stomping on existing bindings.
 
