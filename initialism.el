@@ -105,7 +105,7 @@ the underlying model itself."
 (defun initialism-insert ()
   "Insert the view."
   (interactive)
-  (cond ((initialism--format)
+  (cond (initialism--model
          (insert (initialism--format))
          (message "(initialism) View inserted."))
         (t (message "(initialism) Sorry, I don't have a value to insert"))))
