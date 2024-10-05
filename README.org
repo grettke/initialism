@@ -104,7 +104,7 @@ Eventually Munches All Computer @Storage
 (EMACS)
 #+end_src
 
-/Thank you ~emacs-name~ for the acronym~/
+/Thank you ~emacs-name~ for the acronym/
 
 ** Reviewing
 
