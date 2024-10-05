@@ -24,7 +24,7 @@
 
 ;;; Commentary:
 
-;; *This tool makes memorizing scripts and speaches easier!*
+;; *This tool makes memorizing scripts and speeches easier!*
 ;;
 ;; Why struggle with the tedious and error-prone task of creating
 ;; initialisms for an entire script by hand? This program does it
