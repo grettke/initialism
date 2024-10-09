@@ -48,7 +48,7 @@
 (defvar initialism--model nil
   "The internal representations of information.")
 
-(defcustom initialism-format-string "(%s)"
+(defcustom initialism-format-string " (%s)"
   "Configuration string passed to `format' for the view."
   :type 'string
   :group 'initialism)
