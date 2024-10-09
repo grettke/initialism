@@ -130,7 +130,8 @@ For convenience, the inserted value is also added to the `kill-ring'."
 - Delete the model"
   (interactive)
   (initialism-insert)
-  (initialism-delete))
+  (initialism-delete)
+  (message "(initialism) Initialism complete."))
 
 (defun initialism-dispatch ()
   "Use `C-u' prefix arguments to use the library.
