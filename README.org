@@ -170,7 +170,8 @@ Now, start creating your next initialism.
 
 ** Going A Lot Faster
 
-Now that you've got the hang of it you'll surely move on to longer passages.
+Now that you've got the hang of it you'll surely move on to longer passages. For
+example you could use [[file:Theodore_Roosevelt_MAN_IN_THE_ARENA_SPEECH.org][this speech]].
 Indeed, you never sought to create an initialism for one word: you are likely
 working on an entire speech or script! Your work will now go something like
 this:
