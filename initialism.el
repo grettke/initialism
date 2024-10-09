@@ -123,6 +123,15 @@ For convenience, the inserted value is also added to the `kill-ring'."
         (t
          (message "(initialism) Sorry, I don't have a value to delete."))))
 
+(defun initialism-complete ()
+  "Completes build process for this model.
+
+- Insert the view
+- Delete the model"
+  (interactive)
+  (initialism-insert)
+  (initialism-delete))
+
 (defun initialism-dispatch ()
   "Use `C-u' prefix arguments to use the library.
 

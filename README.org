@@ -46,15 +46,18 @@ ease and convenience for yourself―your brain will love it!
 
 For easier usage―key bind ~initialism-dispatch~.
 
-~A-N~ is particularly nice to avoid stomping on existing bindings.
+~A-b~ is particularly nice to avoid stomping on existing bindings.
 
 Even better: make it available *everywhere*.
 
 Here is how:
 
 #+begin_src emacs-lisp
-(global-set-key [(alt shift ?n)] #'initialism-dispatch)
+(global-set-key [(alt b)] #'initialism-dispatch)
+(global-set-key [(alt shift ?b)] #'initialism-complete)
 #+end_src
+
+Note: consider ~initialism-complete~ a teaser until you dig a little deeper!
 
 * Usage
 
@@ -153,7 +156,7 @@ note in the Echo Area the message.
 (initialism) View deleted.
 #+end_src
 
-** Continuing
+** Reflecting
 
 This example reflects the typical workflow for building an initialism. Call
 ~initialism-help~ to review the workflow. If you want to call the individual
@@ -164,6 +167,36 @@ doesn't work right, start there, and if I failed you, please create a support
 ticket.
 
 Now, start creating your next initialism.
+
+** Going A Lot Faster
+
+Now that you've got the hang of it you'll surely move on to longer passages.
+Indeed, you never sought to create an initialism for one word: you are likely
+working on an entire speech or script! Your work will now go something like
+this:
+
+- Take the script and read it out loud.
+- Note the obvious break points in speaking for example impact or breath.
+- Generally, good breaks are at 5-7 words. However, this is not written in stone; it is very natural to find much longer passages. Note them.
+- This time read the passage while building the initialism. Note the word count and see what works for your speaking style and speed.
+- When you are ready insert the initialism right there in the passage and continue.
+- Read the script again and try it out. You'll quickly find that you have some personal preferences developed for how you build your initialism. It also depends on the content itself. Consequently, you'll perform multiple iterations until you figure out what works best for you.
+- By now you should have a sense of your development style and built initialisms
+  for your script. Additionally, you should notice the massive elephant in the
+  living room: once you get fast designing them, the actual build process slows
+  you down! Consequently, there is a solution: instead of performing each step
+  in the building process individually you can do it all in one fell swoop.
+
+Instead of performing all of the steps individually, which you may think of as
+working in "development mode", you can perform them all in one fell swoop using
+~initialism-complete~. Nothing revolutionary, but it will speed things up.
+
+Surely now you must be asking yourself "Why didn't you tell me about this
+sooner?" Simple answer: you wouldn't have understood how to use the tool in the
+first place, let alone speed it up. Remember that first you build initialisms in
+your mind, and then you use the tool to facilitate that process.
+
+Finally, have fun with this too flying through the process!
 
 * Installation
 
