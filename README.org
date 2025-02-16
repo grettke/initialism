@@ -129,7 +129,7 @@ For convenience, the inserted value is also added to the ~kill-ring~.
 /(EMACS)@\
 #+end_src
 
-Finally it mimics [[https://en.wikipedia.org/wiki/Carriage_return#Computers][CRLF]] behavior. This is particularly helpful if you are processing a lot of single-line content. For example Org mode list items. You can /disable/ this by using ~(setq initialism-crlf nil)~ . You might use this style of processing when you are extracting content from within long sentences.
+Finally it mimics [[https://en.wikipedia.org/wiki/Carriage_return#Computers][CRLF]] behavior. This is particularly helpful if you are processing a lot of single-line content. For example Org mode list items. You can /disable/ this by using ~(setq-default initialism-crlf nil)~ . You might use this style of processing when you are extracting content from within long sentences.
 
 It's important to understand that the format of the initialism is separate from
 the data itself. The actual initialism data, the /Model/, is stored in a private
@@ -144,7 +144,7 @@ Consider this example so far.
 
 Imagine that you want to format the initialism as bold text in LaTeX without
 parentheses around it. You can customize it using
-~(setq initialism-format-string " \\textbf{%s}")~
+~(setq-default initialism-format-string " \\textbf{%s}")~
 
 - The /Model/: EMACS
 - The /View/: =\textbf{EMACS}=
