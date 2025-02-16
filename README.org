@@ -129,6 +129,8 @@ For convenience, the inserted value is also added to the ~kill-ring~.
 /(EMACS)@\
 #+end_src
 
+Finally it mimics [[https://en.wikipedia.org/wiki/Carriage_return#Computers][CRLF]] behavior. This is particularly helpful if you are processing a lot of single-line content. For example Org mode list items. You can disable this by using ~customize~ to customize ~initialism-crlf~ with the value ~nil~. You might use this style of processing when you are extracting content from within long sentences.
+
 It's important to understand that the format of the initialism is separate from
 the data itself. The actual initialism data, the /Model/, is stored in a private
 variable that you won't need to touch. What you see presented from that data,
@@ -283,6 +285,7 @@ Eventually this will get added to [[https://melpa.org/#/][MELPA]].
 
 * Frequently Answered Questions
 *** No End Of Line Support
+**** Position 1
 
 Indeed, now you must ask yourself, "But why can't you handle the end-of-line
 character, my dear system?" The answer is simple: it makes it easy for you to
@@ -290,6 +293,10 @@ create initialism starting from wherever you like, skipping lines, paragraphs,
 or whatever you wish; there are no limits on the source and sequencing of your
 initialism. Therefore, I assume nothing beyond the fact that building the
 initialism using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character Classes]] =[[:alnum:]]= and =[[:punct:]]=
+
+*** Position 2
+
+This turned out to be uncommon. Consequently, I added it as a configuration option.
 
 *** No Region Processing
 

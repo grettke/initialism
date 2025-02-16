@@ -45,13 +45,20 @@
   "Create a word formed from initial letters."
   :group 'abbrev)
 
-(defvar initialism--model nil
-  "The internal representation of the information.")
-
 (defcustom initialism-format-string " (%s)"
   "Configuration string passed to `format' for the view."
   :type 'string
   :group 'initialism)
+
+(defcustom initialism-crlf t
+  "Non-nil means after `initialism-complete' perform a CRLF.
+
+A user-convenience to ease processing single-line content."
+  :type 'boolean
+  :group 'initialism)
+
+(defvar initialism--model nil
+  "The internal representation of the information.")
 
 (defun initialism--format ()
   "Create a formatted model for use."
@@ -130,10 +137,14 @@ For convenience, the inserted value is also added to the `kill-ring'."
   "Completes build process for this model.
 
 - Insert the view
-- Delete the model"
+- Delete the model
+- When `initialism-crlf' perform a CRLF operation."
   (interactive)
   (initialism-insert)
   (initialism-delete)
+  (when initialism-crlf
+    (beginning-of-line)
+    (forward-line 1))
   (message "(initialism) Initialism complete."))
 
 (defun initialism-dispatch ()
