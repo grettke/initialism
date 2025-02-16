@@ -4,7 +4,7 @@
 
 ;; Author: Grant Rettke <grant@wisdomandwonder.com>
 ;; Maintainer: Grant Rettke <grant@wisdomandwonder.com>
-;; Version: 1.0.1
+;; Version: 1.0.2
 ;; Package-Requires: ((emacs "29.1"))
 ;; Keywords: abbrev
 ;; Homepage: https://github.com/grettke/initialism
