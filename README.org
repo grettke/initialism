@@ -294,9 +294,11 @@ or whatever you wish; there are no limits on the source and sequencing of your
 initialism. Therefore, I assume nothing beyond the fact that building the
 initialism using only the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Char-Classes.html#Char-Classes][Character Classes]] =[[:alnum:]]= and =[[:punct:]]=
 
-*** Position 2
+**** Position 2
 
-This turned out to be uncommon. Consequently, I added it as a configuration option.
+This idea initially lacked evidence, but after using it, I've found that breaking content into list items is the easiest way to develop initialisms. Using this tool can be tedious due to the need to frequently navigate back to the start of the next line (i.e., CRLF behavior). Evidence suggests adding a feature to address this issue, yet the original style remains valid and continues to function as intended.
+
+Thus, =initialism= upholds a standard behavior by managing specified character types while allowing for precise individual actions. This feature remains unchanged. The =CRLF= behavior was introduced as a helpful addition, giving us an effective solution that combines both methods.
 
 *** No Region Processing
 
