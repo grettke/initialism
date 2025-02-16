@@ -358,6 +358,8 @@ doesn't require lightning; it makes the task harder. Consequently, prefix
 arguments get you back into the mindset of making it easy to develop
 initialisms.
 
+One idea for the future is switching over the interface to use a Hydra. They are easy for the user, easy to implement and maintain, and a great looking UI.
+
 *** It Isn't Named Acronym or Abbreivate
 
 Shouldn't it be named Acronym or abbreviated? No, neither should be.
