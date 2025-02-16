@@ -1,11 +1,11 @@
 ;;; initialism.el --- Create a word formed from initial letters  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024 Grant Rettke
+;; Copyright (C) 2025 Grant Rettke
 
 ;; Author: Grant Rettke <grant@wisdomandwonder.com>
 ;; Maintainer: Grant Rettke <grant@wisdomandwonder.com>
 ;; Version: 1.0.0
-;; Package-Requires: ((emacs "25.1"))
+;; Package-Requires: ((emacs "29.1"))
 ;; Keywords: abbrev
 ;; Homepage: https://github.com/grettke/initialism
 
