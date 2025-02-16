@@ -46,7 +46,7 @@
   :group 'abbrev)
 
 (defvar initialism--model nil
-  "The internal representations of information.")
+  "The internal representation of the information.")
 
 (defcustom initialism-format-string " (%s)"
   "Configuration string passed to `format' for the view."
