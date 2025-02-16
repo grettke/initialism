@@ -40,22 +40,13 @@
 
 (require 'cl-lib)
 
-(defgroup initialism
-  '((initialism-format-string custom-variable))
-  "Create a word formed from initial letters."
-  :group 'abbrev)
+(defvar initialism-format-string " (%s)"
+  "Configuration string passed to `format' for the view.")
 
-(defcustom initialism-format-string " (%s)"
-  "Configuration string passed to `format' for the view."
-  :type 'string
-  :group 'initialism)
-
-(defcustom initialism-crlf t
+(defvar initialism-crlf t
   "Non-nil means after `initialism-complete' perform a CRLF.
 
-A user-convenience to ease processing single-line content."
-  :type 'boolean
-  :group 'initialism)
+A user-convenience to ease processing single-line content.")
 
 (defvar initialism--model nil
   "The internal representation of the information.")
