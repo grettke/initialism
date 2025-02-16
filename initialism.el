@@ -95,33 +95,36 @@ The message is prefixed with the model length purely to assist
 in understanding the model assembly process: it is NOT part of
 the underlying model itself."
   (interactive)
-  (if initialism--model
-      (let* ((size (length initialism--model))
-             (status (format "[%s]: " size))
-             (report (concat status (initialism--format))))
-        (message report))
-    (message "(initialism) Sorry, I don't have a value to display")))
+  (cond
+   (initialism--model
+    (let* ((size (length initialism--model))
+           (status (format "[%s]: " size))
+           (report (concat status (initialism--format))))
+      (message report)))
+   (t (message "(initialism) Sorry, I don't have a value to display"))))
 
 (defun initialism-insert ()
   "Insert the view.
 
 For convenience, the inserted value is also added to the `kill-ring'."
   (interactive)
-  (cond (initialism--model
-         (let ((it (initialism--format)))
-           (kill-new it)
-           (insert it))
-         (message "(initialism) View inserted."))
-        (t (message "(initialism) Sorry, I don't have a value to insert"))))
+  (cond
+   (initialism--model
+    (let ((it (initialism--format)))
+      (kill-new it)
+      (insert it))
+    (message "(initialism) View inserted."))
+   (t (message "(initialism) Sorry, I don't have a value to insert"))))
 
 (defun initialism-delete ()
   "Delete the model."
   (interactive)
-  (cond (initialism--model
-         (setq initialism--model nil)
-         (message "(initialism) View deleted."))
-        (t
-         (message "(initialism) Sorry, I don't have a value to delete."))))
+  (cond
+   (initialism--model
+    (setq initialism--model nil)
+    (message "(initialism) View deleted."))
+   (t
+    (message "(initialism) Sorry, I don't have a value to delete."))))
 
 (defun initialism-complete ()
   "Completes build process for this model.
@@ -152,12 +155,13 @@ Usage:
   (interactive)
   (let* ((arg current-prefix-arg)
          (value (if (null arg) nil (first arg))))
-    (cond ((null value) (call-interactively 'initialism-build))
-          ((= value 4) (call-interactively 'initialism-view))
-          ((= value 16) (call-interactively 'initialism-insert))
-          ((= value 64) (call-interactively 'initialism-delete))
-          (t
-           (error "(initialism) Sorry, I can't handle the argument '%s'" value)))))
+    (cond
+     ((null value) (call-interactively 'initialism-build))
+     ((= value 4) (call-interactively 'initialism-view))
+     ((= value 16) (call-interactively 'initialism-insert))
+     ((= value 64) (call-interactively 'initialism-delete))
+     (t
+      (error "(initialism) Sorry, I can't handle the argument '%s'" value)))))
 
 (defun initialism-help ()
   "Display documentation for `initialism-dispatch'."
