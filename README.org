@@ -7,12 +7,14 @@
 :CONTENTS:
 - [[#justification-for-existence][Justification For Existence]]
 - [[#key-binding][Key Binding]]
+- [[#master-usage][Master Usage]]
 - [[#usage][Usage]]
   - [[#building][Building]]
   - [[#reviewing][Reviewing]]
   - [[#inserting][Inserting]]
   - [[#deleting][Deleting]]
-  - [[#continuing][Continuing]]
+  - [[#reflecting][Reflecting]]
+  - [[#going-a-lot-faster][Going A Lot Faster]]
 - [[#installation][Installation]]
   - [[#traditional][Traditional]]
   - [[#package][Package]]
@@ -22,12 +24,15 @@
 - [[#definitions][Definitions]]
 - [[#frequently-answered-questions][Frequently Answered Questions]]
   - [[#no-end-of-line-support][No End Of Line Support]]
+    - [[#position-1][Position 1]]
+    - [[#position-2][Position 2]]
   - [[#no-region-processing][No Region Processing]]
   - [[#no-insertion-post-processing-function][No Insertion Post-Processing Function]]
   - [[#other-initialism-creators][Other Initialism Creators]]
   - [[#no-rebus-generation][No Rebus Generation]]
   - [[#this-is-perfect-for-prefix-arguments][This Is Perfect For Prefix Arguments]]
-  - [[#it-isnt-named-acronym-or-abbreivate][It Isn't Named Acronym or Abbreivate]]
+  - [[#it-isnt-named-acronym-or-abbreviate][It Isn't Named Acronym or Abbreviate]]
+  - [[#why-not-use-customize][Why not use customize?]]
 :END:
 
 * Justification For Existence
@@ -58,6 +63,22 @@ Here is how:
 #+end_src
 
 Note: consider ~initialism-complete~ a teaser until you dig a little deeper!
+
+* Master Usage
+
+For the truly impatient like myself, this package is already configured for the most common scenario of adding initialisms to list items created by breaking sentences into a sensible number of words. For example, here are some short examples (just imagine I broke up a speech or something). Position your cursor at the ~@~ and start madly stomping away, and watch the initialisms get inserted at the end.
+
+#+begin_src org
+- Eventually Munches All Computer Storage (*EMACS*)
+- Compact Disc Read Only Memory (*CDROM*)
+- National Aeronautics Space Administration (*NASA*)
+#+end_src
+
+Read on for an intricate and detailed overview of how this works behind the scenes, building up to a final conclusion about using it quickly within an explanatory context. If you prefer this approach then add this to your configuration first:
+
+#+begin_src elisp
+(setopt initialism-auto-complete nil)
+#+end_src
 
 * Usage
 

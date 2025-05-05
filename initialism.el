@@ -48,6 +48,16 @@
 
 A user-convenience to ease processing single-line content.")
 
+(defcustom initialism-auto-complete t
+  "If non-nil, automatically call `initialism-complete' when
+point reaches the end of a line during `initialism-build'.
+
+This option controls whether initialism completion is triggered
+by encountering end-of-line. Set to `nil' if you want to handle
+completion manually."
+  :type 'boolean
+  :group 'initialism)
+
 (defvar initialism--model nil
   "The internal representation of the information.")
 
@@ -74,6 +84,11 @@ A user-convenience to ease processing single-line content.")
       (cond ((looking-at "[[:alnum:]]") (setq forward-type 'word))
             ((looking-at "[[:punct:]]") (setq forward-type 'char))
             ((looking-at "[[:blank:]]") (progn (forward-char) (cl-return-from here)))
+            ((and initialism-auto-complete
+                  (looking-at "$"))
+             (progn
+               (initialism-complete)
+               (cl-return-from here)))
             ((error
               "(initialism) Sorry, I don't know how to handle character: '%s'" character)))
       (let* ((uc-letter (capitalize character))
